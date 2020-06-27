@@ -10,16 +10,16 @@
 
     <form method="post" action="sendemail.php">
         <label>Name:</label>
-        <input name="sender">
+        <input id="sender" name="sender">
 
         <label>Email address:</label>
-        <input name="senderEmail">
+        <input id="email" name="senderEmail">
 
         <label>Message:</label>
-        <textarea rows="5" cols="20" name="message"></textarea>
+        <textarea id="message" rows="5" cols="20" name="message"></textarea>
 
-        <input type="submit" name="submit">
-    </form>
+        <button type="button" class="btn btn-primary btn-lg" id="submitbtn" name="submit" onclick=send()>Prijava</button>    </form>
+    <script src="sendemail.js" type="text/javascript"></script>
 
 </body>
 

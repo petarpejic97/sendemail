@@ -9,7 +9,7 @@
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
     
-    if (mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");)
+    if (mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>"))
     {
         echo "<p>Thank you! Your message has been sent.</p>";
     }

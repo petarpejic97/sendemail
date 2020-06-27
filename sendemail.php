@@ -13,7 +13,7 @@ if($_POST["submit"]) {
 
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
-	echo $thankYou;
+    
 }
 
 ?>

@@ -8,10 +8,17 @@
 
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    
+    if (mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");)
+    {
+        echo "<p>Thank you! Your message has been sent.</p>";
+    }
+    else
+    {
+        echo "Error: Message not accepted";
+    }
 
-
-    echo "<p>Thank you! Your message has been sent.</p>";
+    
    
 
 ?>
